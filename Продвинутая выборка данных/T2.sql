@@ -1,22 +1,22 @@
-INSERT INTO genre (name) VALUES ('Rock'), ('Rap'), ('Club');
+INSERT INTO genre (name) VALUES ('Rap'), ('Rock'), ('Club');
 
-INSERT INTO executor (alias, name, genre)
+INSERT INTO executor (alias, name)
 VALUES 
-('Horus', 'Алексей Спиридонов', 'Rap'),
-('Oxxxymiron', 'Мирон Фёдоров', 'Rap'),
-('Бледный', 'Андрей Позднухов', 'Rap'),
-('Ант', 'Антон Завьялов', 'rap'),
-('System of a Down', 'Serj Tankian', 'Rock'),
-('Rammstein', 'Till Lindemann', 'Rock'),
-('Motionless in White', 'Chris Cerulli', 'Rock'),
-('David Guetta', 'David Guetta', 'Club'),
-('Armin van Buuren', 'Armin van Buuren', 'Club'),
-('Tiesto', 'Tijs Michiel Verwest', 'Club');
+('Horus', 'Алексей Спиридонов'),
+('Oxxxymiron', 'Мирон Фёдоров'),
+('Бледный', 'Андрей Позднухов'),
+('Ант', 'Антон Завьялов'),
+('System of a Down', 'Serj Tankian'),
+('Rammstein', 'Till Lindemann'),
+('Motionless in White', 'Chris Cerulli'),
+('David Guetta', 'David Guetta'),
+('Armin van Buuren', 'Armin van Buuren'),
+('Tiesto', 'Tijs Michiel Verwest');
 
 INSERT INTO genresexecutors (genre_id, executor_id)
 VALUES
-(1, 5), (1, 6), (1, 7),
-(2, 1), (2, 2), (2, 3), (2, 4),
+(1, 1), (1, 2), (1, 3), (1, 4),
+(2, 5), (2, 6), (2, 7),
 (3, 8), (3, 9), (3, 10);
 
 INSERT INTO album (album_name, release_date, rate)
